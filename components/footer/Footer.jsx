@@ -4,6 +4,9 @@ import { IoLocationSharp, IoMail } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
+      <div className="text-white text-3xl font-semi-bold text-center py-10 bg-gray-700">
+        EXPERIENCE THE EXCEPTIONAL AT CARSQUAD
+      </div>
       <div className="bg-black px-24 flex justify-between pb-6">
         {/* <div>maps</div> */}
         <div>

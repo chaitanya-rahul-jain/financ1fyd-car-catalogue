@@ -7,10 +7,6 @@ import { FaInstagram } from "react-icons/fa";
 export default function Home() {
   return (
     <main>
-      <TopBar />
-
-      <Navbar />
-
       <div className="h-[44rem] overflow-hidden relative">
         <h2 className="absolute text-center text-white text-4xl font-semibold w-full top-10">
           Welcome to FINANC1FYD
@@ -90,12 +86,7 @@ export default function Home() {
             357 Guelph St., Georgetown, ON L7G 4B6
           </div>
         </div>
-        <div className="text-white text-3xl font-semi-bold text-center py-10 bg-gray-700">
-          EXPERIENCE THE EXCEPTIONAL AT CARSQUAD
-        </div>
       </div>
-
-      <Footer />
     </main>
   );
 }
