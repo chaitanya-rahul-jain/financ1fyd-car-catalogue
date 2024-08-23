@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Inventory = () => {
   return (
-    <div>Inventory</div>
-  )
-}
+    <div>
+      <img src="/inventory/inventory_banner.jpg" />
+    </div>
+  );
+};
 
-export default Inventory
+export default Inventory;
