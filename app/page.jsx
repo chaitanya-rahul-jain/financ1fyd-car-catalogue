@@ -1,6 +1,3 @@
-import Footer from "@/components/footer/Footer";
-import Navbar from "@/components/navbar/Navbar";
-import TopBar from "@/components/navbar/TopBar";
 import RedirectCardSec2 from "@/components/section 2/RedirectCardSec2";
 import { FaInstagram } from "react-icons/fa";
 
@@ -17,7 +14,7 @@ export default function Home() {
         <video src="/main-car-vid.mp4" autoPlay loop muted playsInline></video>
       </div>
 
-      <div className="flex justify-center gap-12 py-10">
+      <div className="flex justify-center gap-12 py-10 px-10">
         <RedirectCardSec2
           imgUrl="/section-2-1.jpg"
           heading="View Inventory"
