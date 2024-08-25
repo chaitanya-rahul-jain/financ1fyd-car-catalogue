@@ -8,18 +8,19 @@ const About = () => {
         <p className="pb-10 font-semibold text-sm">
           Established with a commitment to revolutionize the car-buying
           experience, FINANC1FYD Dealership stands as a beacon of reliability
-          and excellence in Toronto's automotive industry. Our journey began
+          and excellence in Toronto&apos;s automotive industry. Our journey began
           with a simple yet profound vision: to provide customers with
           unparalleled access to the finest vehicles coupled with the most
           competitive financing options available. With this guiding principle
-          at our core, we've meticulously curated a comprehensive inventory of
-          top-quality cars, ensuring there's something for every taste and
-          preference. Whether you're seeking a compact commuter, a
-          family-friendly SUV, or a luxurious sedan, we've got you covered. At
+          at our core, we&apos;ve meticulously curated a comprehensive inventory of
+          top-quality cars, ensuring there&apos;s something for every taste and
+          preference. Whether you&apos;re seeking a compact commuter, a
+          family-friendly SUV, or a luxurious sedan, we&apos;ve got you covered. At
           FINANC1FYD, we understand that purchasing a car is more than just a
-          transaction &#45; it's an investment in your lifestyle and future. That's
-          why we prioritize transparency, integrity, and customer satisfaction
-          in every interaction, striving to exceed expectations at every turn.
+          transaction &#45; it&apos;s an investment in your lifestyle and future.
+          That&apos;s why we prioritize transparency, integrity, and customer
+          satisfaction in every interaction, striving to exceed expectations at
+          every turn.
         </p>
         <p className="pb-10 font-semibold text-sm">
           What sets FINANC1FYD apart from the rest is our unwavering commitment
@@ -42,10 +43,10 @@ const About = () => {
           vehicles and unparalleled service. We take pride in fostering
           long-lasting relationships built on trust, reliability, and mutual
           respect. Our commitment to excellence extends beyond the showroom
-          floor &#45; it's ingrained in everything we do. From our meticulously
+          floor &#45; it&apos;s ingrained in everything we do. From our meticulously
           maintained inventory to our dedicated team of automotive enthusiasts,
           every aspect of the FINANC1FYD experience is designed to exceed your
-          expectations. Whether you're a first-time buyer or a seasoned car
+          expectations. Whether you&apos;re a first-time buyer or a seasoned car
           enthusiast, we welcome you to join the FINANC1FYD family and embark on
           a journey of automotive excellence like never before. Discover the
           difference that quality, integrity, and passion can make &#45; visit
