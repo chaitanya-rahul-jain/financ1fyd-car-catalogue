@@ -1,3 +1,4 @@
+'use client'
 import CarInventoryCard from "@/components/inventory/CarInventoryCard";
 import React from "react";
 

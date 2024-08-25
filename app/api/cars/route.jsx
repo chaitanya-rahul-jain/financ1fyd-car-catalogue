@@ -14,3 +14,51 @@ export async function GET(request) {
     );
   }
 }
+
+export async function POST(request) {
+  try {
+    const body = await request.json().catch(() => null);
+
+    if (!body) {
+      return NextResponse.json(
+        { error: "Invalid or empty JSON input" },
+        { status: 400 }
+      );
+    }
+
+    const {
+      name,
+      engine,
+      drivetrain,
+      exterior,
+      interior,
+      odometer,
+      cashPrice,
+      financePrice,
+      imageUrl,
+      make,
+      year,
+    } = body;
+
+    const newCar = await prisma.car.create({
+      data: {
+        name,
+        engine,
+        drivetrain,
+        exterior,
+        interior,
+        odometer,
+        cashPrice,
+        financePrice,
+        imageUrl,
+        make,
+        year,
+      },
+    });
+
+    return NextResponse.json(newCar, { status: 201 });
+  } catch (error) {
+    console.log("Error:", error.message);
+    return NextResponse.json({ error: error.message }, { status: 500 });
+  }
+}
