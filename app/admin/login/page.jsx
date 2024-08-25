@@ -1,7 +1,7 @@
-const AdminLogin = () => {
-  return (
-    <div>AdminLogin</div>
-  )
-}
+// const AdminLogin = () => {
+//   return (
+//     <div>AdminLogin</div>
+//   )
+// }
 
-export default AdminLogin
+// export default AdminLogin
