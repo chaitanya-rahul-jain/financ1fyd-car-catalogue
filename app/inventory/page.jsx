@@ -1,6 +1,4 @@
-'use client'
-import CarInventoryCard from "@/components/inventory/CarInventoryCard";
-import React from "react";
+import CarListDisplay from "@/components/inventory/CarListDisplay";
 
 const Inventory = () => {
   return (
@@ -8,11 +6,9 @@ const Inventory = () => {
       <div>
         <img src="/inventory/inventory_banner.jpg" />
       </div>
-      <div>
+      <div className="bg-black">
         <div></div>
-        <div className="grid grid-cols-3 gap-4">
-          <CarInventoryCard/>
-        </div>
+        <CarListDisplay />
       </div>
     </>
   );

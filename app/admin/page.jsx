@@ -1,7 +1,11 @@
+import CarListDisplay from "@/components/inventory/CarListDisplay";
+
 const Admin = () => {
   return (
-    <div>Admin</div>
-  )
-}
+    <div className="bg-black">
+      <CarListDisplay delete={true} />
+    </div>
+  );
+};
 
-export default Admin
+export default Admin;

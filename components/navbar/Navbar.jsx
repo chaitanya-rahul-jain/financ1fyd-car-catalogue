@@ -21,7 +21,7 @@ const Navbar = () => {
             INVENTORY
           </div>
         </Link>
-        <Link href="/about-us">
+        <Link href="/about">
           <div className="font-bold hover:text-red-600 duration-150 hover:cursor-pointer">
             ABOUT US
           </div>
