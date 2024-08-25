@@ -17,7 +17,7 @@ const About = () => {
           preference. Whether you're seeking a compact commuter, a
           family-friendly SUV, or a luxurious sedan, we've got you covered. At
           FINANC1FYD, we understand that purchasing a car is more than just a
-          transaction – it's an investment in your lifestyle and future. That's
+          transaction &#45; it's an investment in your lifestyle and future. That's
           why we prioritize transparency, integrity, and customer satisfaction
           in every interaction, striving to exceed expectations at every turn.
         </p>
@@ -42,13 +42,13 @@ const About = () => {
           vehicles and unparalleled service. We take pride in fostering
           long-lasting relationships built on trust, reliability, and mutual
           respect. Our commitment to excellence extends beyond the showroom
-          floor – it's ingrained in everything we do. From our meticulously
+          floor &#45; it's ingrained in everything we do. From our meticulously
           maintained inventory to our dedicated team of automotive enthusiasts,
           every aspect of the FINANC1FYD experience is designed to exceed your
           expectations. Whether you're a first-time buyer or a seasoned car
           enthusiast, we welcome you to join the FINANC1FYD family and embark on
           a journey of automotive excellence like never before. Discover the
-          difference that quality, integrity, and passion can make – visit
+          difference that quality, integrity, and passion can make &#45; visit
           FINANC1FYD Dealership today and experience the future of car buying.
         </p>
       </div>
@@ -70,39 +70,39 @@ const About = () => {
         <div>
           <div>Hours of Operation</div>
           <div>
-          <div>
-          <div className="text-white text-xl font-bold py-8">OUR HOURS</div>
-          <div className="text-white flex flex-col gap-3 w-96">
-            <div className="flex justify-between">
-              <div>MONDAY</div>
-              <div>9:00 AM to 8:00 PM</div>
+            <div>
+              <div className="text-white text-xl font-bold py-8">OUR HOURS</div>
+              <div className="text-white flex flex-col gap-3 w-96">
+                <div className="flex justify-between">
+                  <div>MONDAY</div>
+                  <div>9:00 AM to 8:00 PM</div>
+                </div>
+                <div className="flex justify-between">
+                  <div>TUESDAY</div>
+                  <div>9:00 AM to 8:00 PM</div>
+                </div>
+                <div className="flex justify-between">
+                  <div>WEDNESDAY</div>
+                  <div>9:00 AM to 8:00 PM</div>
+                </div>
+                <div className="flex justify-between">
+                  <div>THURSDAY</div>
+                  <div>9:00 AM to 8:00 PM</div>
+                </div>
+                <div className="flex justify-between">
+                  <div>FRIDAY</div>
+                  <div>9:00 AM to 8:00 PM</div>
+                </div>
+                <div className="flex justify-between">
+                  <div>SATURDAY</div>
+                  <div>9:00 AM to 8:00 PM</div>
+                </div>
+                <div className="flex justify-between">
+                  <div>SUNDAY</div>
+                  <div>BY APPOINTMENT</div>
+                </div>
+              </div>
             </div>
-            <div className="flex justify-between">
-              <div>TUESDAY</div>
-              <div>9:00 AM to 8:00 PM</div>
-            </div>
-            <div className="flex justify-between">
-              <div>WEDNESDAY</div>
-              <div>9:00 AM to 8:00 PM</div>
-            </div>
-            <div className="flex justify-between">
-              <div>THURSDAY</div>
-              <div>9:00 AM to 8:00 PM</div>
-            </div>
-            <div className="flex justify-between">
-              <div>FRIDAY</div>
-              <div>9:00 AM to 8:00 PM</div>
-            </div>
-            <div className="flex justify-between">
-              <div>SATURDAY</div>
-              <div>9:00 AM to 8:00 PM</div>
-            </div>
-            <div className="flex justify-between">
-              <div>SUNDAY</div>
-              <div>BY APPOINTMENT</div>
-            </div>
-          </div>
-        </div>
           </div>
         </div>
       </div>
