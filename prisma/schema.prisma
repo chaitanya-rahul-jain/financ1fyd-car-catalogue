@@ -9,25 +9,30 @@ generator client {
 }
 
 datasource db {
-  provider = "cockroachdb"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Car {
-  id          String   @id @default(uuid())
-  make        String
-  model       String
-  year        Int
-  price       Float
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id           String   @id @default(uuid())
+  name         String
+  make         String
+  year         Int
+  engine       String
+  drivetrain   String
+  exterior     String
+  interior     String
+  odometer     Int
+  cashPrice    Float
+  financePrice Float
+  imageUrl     String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }
 
 model Admin {
-  id          String   @id @default(uuid())
-  username    String   @unique
-  password    String
-  createdAt   DateTime @default(now())
+  username String @unique
+  password String
 }
 
 // npx prisma migrate dev --name init
