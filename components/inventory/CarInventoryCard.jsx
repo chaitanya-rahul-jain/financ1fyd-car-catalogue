@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const CarInventoryCard = ({ data }) => {
   return (
     <div className="bg-white">
@@ -45,9 +47,11 @@ const CarInventoryCard = ({ data }) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="flex items-center justify-center w-11/12 mt-[10px] mb-[10px]  bg-red-500 hover:bg-red-700 duration-300 text-xs font-semibold text-white rounded py-2">
-          VIEW DETAILS
-        </button>
+        <Link href={`/car-details/${data.id}`}>
+          <button className="flex items-center justify-center w-11/12 mt-[10px] mb-[10px]  bg-red-500 hover:bg-red-700 duration-300 text-xs font-semibold text-white rounded py-2">
+            VIEW DETAILS
+          </button>
+        </Link>
       </div>
     </div>
   );
