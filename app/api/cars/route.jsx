@@ -37,6 +37,7 @@ export async function POST(request) {
       imageUrl,
       make,
       year,
+      secondaryImages,
     } = body;
 
     const newCar = await prisma.car.create({
@@ -52,8 +53,22 @@ export async function POST(request) {
         imageUrl,
         make,
         year,
+        secondaryImages,
       },
     });
+
+    // const car = await prisma.car.create({
+    //   data: {
+    //     // ... other fields ...
+    //     imageUrl: 'http://example.com/main-image.jpg',
+    //     secondaryImages: [
+    //       'http://example.com/secondary1.jpg',
+    //       'http://example.com/secondary2.jpg',
+    //       'http://example.com/secondary3.jpg',
+    //       'http://example.com/secondary4.jpg',
+    //     ],
+    //   },
+    // });
 
     return NextResponse.json(newCar, { status: 201 });
   } catch (error) {

@@ -26,8 +26,7 @@ model Car {
   cashPrice    Float
   financePrice Float
   imageUrl     String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  secondaryImages String[]
 }
 
 model Admin {

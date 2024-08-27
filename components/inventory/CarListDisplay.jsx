@@ -10,7 +10,7 @@ const CarListDisplay = () => {
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await axios.get("https://financ1fyd-car-catalogue.vercel.app/api/cars"); // Replace with your API endpoint
+        const response = await axios.get("localhost:3000/api/cars"); // Replace with your API endpoint
         setCarData(response.data);
         console.log("data fetched successfully");
       } catch (error) {

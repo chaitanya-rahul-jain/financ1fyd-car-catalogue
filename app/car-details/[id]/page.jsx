@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 
 const carDetails = ({ id }) => {
@@ -7,7 +8,7 @@ const carDetails = ({ id }) => {
     const fetchCar = async () => {
       try {
         const response = await axios.get(
-          `https://financ1fyd-car-catalogue.vercel.app/api/car/${id}`
+          `https://localhost:3000/api/car/${id}`
         ); // Replace with your API endpoint
         setCarData(response.data);
         console.log("car data fetched successfully");
