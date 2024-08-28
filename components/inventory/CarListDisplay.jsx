@@ -23,12 +23,23 @@ const CarListDisplay = ({ filters }) => {
     fetchCars();
   }, []);
 
-  console.log(filters);
+  const filteredCars = carData.filter((car) => {
+    return (
+      (filters.year.length === 0 ||
+        filters.year.includes(car.year.toString())) &&
+      (filters.make.length === 0 ||
+        filters.make.includes(car.make.toString())) &&
+      (filters.exteriorColor.length === 0 ||
+        filters.exteriorColor.includes(car.exterior.toString())) &&
+      (filters.interiorColor.length === 0 ||
+        filters.interiorColor.includes(car.interior.toString()))
+    );
+  });
 
   return (
     <div>
       <div className="grid grid-cols-3 gap-4 px-10 pb-28 pt-10">
-        {carData.map((car) => {
+        {filteredCars.map((car) => {
           return <CarInventoryCard data={car} key={car.id} />;
         })}
       </div>

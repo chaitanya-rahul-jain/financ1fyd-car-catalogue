@@ -19,11 +19,13 @@ export default function Home() {
           imgUrl="/section-2-1.jpg"
           heading="View Inventory"
           buttonText="VIEW INVENTORY"
+          linkTo="/inventory"
         />
         <RedirectCardSec2
           imgUrl="/section-2-2.jpg"
-          heading="Get Approved"
-          buttonText="APPLY NOW"
+          heading="Know About Us"
+          buttonText="ABOUT US"
+          linkTo="/about"
         />
       </div>
 
