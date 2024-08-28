@@ -1,4 +1,5 @@
 import CarListDisplay from "@/components/inventory/CarListDisplay";
+import FilterForm from "@/components/inventory/FilterForm";
 
 const Inventory = () => {
   return (
@@ -7,7 +8,9 @@ const Inventory = () => {
         <img src="/inventory/inventory_banner.jpg" />
       </div>
       <div className="bg-black">
-        <div></div>
+        <div>
+          <FilterForm></FilterForm>
+        </div>
         <CarListDisplay />
       </div>
     </>

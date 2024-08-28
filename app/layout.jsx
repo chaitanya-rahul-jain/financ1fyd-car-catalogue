@@ -3,6 +3,7 @@ import "./globals.css";
 import TopBar from "@/components/navbar/TopBar";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <TopBar />
         <Navbar />
-        {children}
+        <AntdRegistry>{children}</AntdRegistry>
         <Footer />
       </body>
     </html>
