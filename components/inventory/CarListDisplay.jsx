@@ -4,13 +4,15 @@ import React from "react";
 import { useState, useEffect } from "react";
 import CarInventoryCard from "./CarInventoryCard";
 
-const CarListDisplay = () => {
+const CarListDisplay = ({ filters }) => {
   const [carData, setCarData] = useState([]);
 
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await axios.get(`${process.env.NEXT_PUBLIC_ROOT_URL}/api/cars`); // Replace with your API endpoint
+        const response = await axios.get(
+          `${process.env.NEXT_PUBLIC_ROOT_URL}/api/cars`
+        ); // Replace with your API endpoint
         setCarData(response.data);
         console.log("data fetched successfully");
       } catch (error) {
@@ -20,6 +22,8 @@ const CarListDisplay = () => {
 
     fetchCars();
   }, []);
+
+  console.log(filters);
 
   return (
     <div>

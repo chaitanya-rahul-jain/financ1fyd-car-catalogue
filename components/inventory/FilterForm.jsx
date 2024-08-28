@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Select, Card, Row, Col, Slider } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
+import { DownOutlined, SearchOutlined } from "@ant-design/icons";
 
 const { Option } = Select;
 
@@ -76,7 +76,7 @@ const FilterForm = () => {
               style={{ width: "100%" }}
               mode="multiple"
               placeholder={filter.name}
-              suffixIcon={<SearchOutlined />}
+              suffixIcon={<DownOutlined />}
               optionFilterProp="children"
               filterOption={(input, option) =>
                 option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
