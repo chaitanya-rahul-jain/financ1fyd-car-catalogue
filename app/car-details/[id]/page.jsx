@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 const CarDetails = ({ params }) => {
   const { id } = params;
 
-  const [carData, setCarData] = useState([]);
+  const [carData, setCarData] = useState({});
 
   useEffect(() => {
     const fetchCar = async () => {
@@ -26,7 +26,34 @@ const CarDetails = ({ params }) => {
 
   console.log(carData);
 
-  return <div>hello world</div>;
+  return (
+    <div>
+      <div className="grid grid-rows-4 grid-cols-4 gap-2 px-2">
+        <div
+          className="col-span-2 row-span-2 bg-cover bg-center h-96"
+          style={{ backgroundImage: `url(${carData.imageUrl})` }}
+        ></div>
+        {carData.secondaryImages &&
+          carData.secondaryImages.map((image, index) => (
+            <div
+              key={index}
+              className="bg-cover bg-center"
+              style={{ backgroundImage: `url(${image})` }}
+            ></div>
+          ))}
+      </div>
+      <div>
+        <div>
+          <div className="text-3xl font-bold">{carData.name}</div>
+          <div>
+            <div>About This Vehicle</div>
+            <div></div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  );
 };
 
 export default CarDetails;
