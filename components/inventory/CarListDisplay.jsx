@@ -10,7 +10,7 @@ const CarListDisplay = () => {
   useEffect(() => {
     const fetchCars = async () => {
       try {
-        const response = await axios.get("localhost:3000/api/cars"); // Replace with your API endpoint
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_ROOT_URL}/api/cars`); // Replace with your API endpoint
         setCarData(response.data);
         console.log("data fetched successfully");
       } catch (error) {
