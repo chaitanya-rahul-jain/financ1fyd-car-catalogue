@@ -29,11 +29,6 @@ model Car {
   secondaryImages String[]
 }
 
-model Admin {
-  username String @unique
-  password String
-}
-
 // npx prisma migrate dev --name init
 // -> generate the prisma client
 // npx prisma generate
