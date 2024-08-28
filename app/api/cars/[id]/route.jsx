@@ -8,7 +8,7 @@ export async function GET(request, { params }) {
   try {
     const car = await prisma.car.findUnique({
       where: {
-        id: id,
+        id: parseInt(id),
       },
     });
 

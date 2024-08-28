@@ -28,7 +28,7 @@ const CarDetails = ({ params }) => {
 
   return (
     <div>
-      <div className="grid grid-rows-4 grid-cols-4 gap-2 px-2">
+      <div className="grid grid-rows-2 grid-cols-4 gap-2 px-2">
         <div
           className="col-span-2 row-span-2 bg-cover bg-center h-96"
           style={{ backgroundImage: `url(${carData.imageUrl})` }}
@@ -42,11 +42,11 @@ const CarDetails = ({ params }) => {
             ></div>
           ))}
       </div>
-      <div>
+      <div className="flex justify-stretch px-10">
         <div>
-          <div className="text-3xl font-bold">{carData.name}</div>
+          <div className="text-3xl font-bold pt-5 pb-12">{carData.name}</div>
           <div>
-            <div>About This Vehicle</div>
+            <div className="text-xl font-semibold">About This Vehicle</div>
             <div></div>
           </div>
         </div>

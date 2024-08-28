@@ -14,18 +14,18 @@ datasource db {
 }
 
 model Car {
-  id           String   @id @default(uuid())
-  name         String
-  make         String
-  year         Int
-  engine       String
-  drivetrain   String
-  exterior     String
-  interior     String
-  odometer     Int
-  cashPrice    Float
-  financePrice Float
-  imageUrl     String
+  id              Int      @id @default(autoincrement())
+  name            String
+  make            String
+  year            Int
+  engine          String
+  drivetrain      String
+  exterior        String
+  interior        String
+  odometer        Int
+  cashPrice       Float
+  financePrice    Float
+  imageUrl        String
   secondaryImages String[]
 }
 
