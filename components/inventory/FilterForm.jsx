@@ -11,7 +11,7 @@ const FilterForm = () => {
   const [price, setPrice] = useState([0, 50000]); // Adjust the max price as needed
 
   const filters = [
-    { name: "Vehicle Type", options: ["Sedan", "SUV", "Truck", "Van"] },
+    // { name: "Vehicle Type", options: ["Sedan", "SUV", "Truck", "Van"] },
     {
       name: "Year",
       options: [
@@ -50,21 +50,25 @@ const FilterForm = () => {
         "Lamborghini",
       ],
     },
-    { name: "Model", options: ["Model S", "Model 3", "Model X", "Model Y"] },
+    // { name: "Model", options: ["Model S", "Model 3", "Model X", "Model Y"] },
     {
       name: "Exterior Color",
       options: ["Black", "White", "Red", "Blue", "Silver"],
     },
-    { name: "Body Style", options: ["Coupe", "Sedan", "SUV", "Truck", "Van"] },
-    { name: "Transmission", options: ["Automatic", "Manual"] },
     {
-      name: "Fuel Type",
-      options: ["Gasoline", "Diesel", "Electric", "Hybrid"],
+      name: "Interior Color",
+      options: ["Black", "White", "Red", "Blue", "Silver"],
     },
+    // { name: "Body Style", options: ["Coupe", "Sedan", "SUV", "Truck", "Van"] },
+    // { name: "Transmission", options: ["Automatic", "Manual"] },
+    // {
+    //   name: "Fuel Type",
+    //   options: ["Gasoline", "Diesel", "Electric", "Hybrid"],
+    // },
   ];
 
   return (
-    <div className="bg-white px-10 py-10 mx-10 mb-10">
+    <div className="bg-white px-10 py-5 mx-5 mb-5">
       <Row gutter={[16, 16]}>
         {filters.map((filter) => (
           <Col key={filter.name} xs={24} sm={12} md={8} lg={6}>
