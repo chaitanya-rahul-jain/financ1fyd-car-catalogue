@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between max-[1000px]:flex-col">
       <div className="flex justify-center items-center gap-2 p-5">
         <img src="/main-logo.jpeg" alt="logo" className="h-20 w-20" />
         <div>
@@ -10,7 +10,7 @@ const Navbar = () => {
           <p className="text-1xl font-medium">Financing for your dream car</p>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-5 mr-8">
+      <div className="flex justify-center items-center gap-5 mr-8 max-[1000px]:mr-0 ">
         <Link href="/">
           <div className="font-bold hover:text-red-600 duration-150 hover:cursor-pointer">
             HOME

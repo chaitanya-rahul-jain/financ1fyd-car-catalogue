@@ -53,7 +53,7 @@ const About = () => {
           FINANC1FYD Dealership today and experience the future of car buying.
         </p>
       </div>
-      <div className="w-[700px] bg-red-700">
+      <div className="w-[700px] bg-gray-600">
         <div>Contact Us</div>
         <div>
           <div>Sales:</div>
